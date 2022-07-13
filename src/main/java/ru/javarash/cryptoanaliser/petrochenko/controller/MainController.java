@@ -8,7 +8,6 @@ public class MainController {
     public Result execute(String command, String[] parameters) {
         Action action = Actions.find(command);
         //throw new UnsupportedOperationException();
-        Result result = action.execute(parameters);
-        return result;
+        return action.execute(parameters);
     }
 }
